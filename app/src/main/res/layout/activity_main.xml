@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="the.aqid.khatkhatay.appliedcs.MainActivity"
+    android:background="#59bbe6">
+
+    <TextView
+        android:id="@+id/userscore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tscore"
+        android:layout_toLeftOf="@+id/imageView"
+        android:layout_toStartOf="@+id/imageView"
+        android:text="Your score"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/computerscore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="17dp"
+        android:layout_marginRight="17dp"
+        android:layout_marginTop="28dp"
+        android:text="Computer Score"
+        android:textSize="20sp" />
+    <TextView
+        android:id="@+id/tscore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/computerscore"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:text="Turn Score:0"
+        android:textSize="30sp"/>
+
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userscore"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:contentDescription="TODO"
+        android:elevation="8dp"
+        android:src="@drawable/dice1" />
+
+    <Button
+        android:id="@+id/roll"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="75dp"
+        android:background="#2679e6"
+        android:text="ROLL"
+        android:textSize="20sp" />
+    <Button
+        android:id="@+id/hold"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/roll"
+        android:layout_alignBottom="@+id/roll"
+        android:layout_centerHorizontal="true"
+
+        android:text="HOLD"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/roll"
+        android:layout_alignBottom="@+id/roll"
+        android:layout_alignParentEnd="true"
+
+        android:text="RESET"
+        android:textSize="20sp" />
+
+</RelativeLayout>
